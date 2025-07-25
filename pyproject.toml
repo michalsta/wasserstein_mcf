@@ -1,0 +1,10 @@
+[build-system]
+requires = ["scikit-build-core", "nanobind", "pylmcf @ git+https://github.com/michalsta/pylmcf.git"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "wasserstein_mcf"
+version = "0.0.1"
+dependencies = [
+    "pylmcf @ git+https://github.com/michalsta/pylmcf.git",
+]
