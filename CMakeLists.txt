@@ -25,7 +25,7 @@ src/cpp/wasserstein_mcf/main.cpp)
 
 target_include_directories(wasserstein_mcf_ext
 PRIVATE
-    ${ISOSPEC_INCLUDEPATH})
+    ${PYLMCF_INCLUDE_PATH})
 
 
 install(TARGETS wasserstein_mcf_ext LIBRARY DESTINATION wasserstein_mcf)

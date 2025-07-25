@@ -4,6 +4,7 @@
 #include <nanobind/stl/string.h>
 #include <nanobind/stl/vector.h>
 
+#include "distribution.hpp"
 
 NB_MODULE(wasserstein_mcf_ext, m) {
     m.doc() = "Wasserstein MCF extension module";
@@ -13,11 +14,3 @@ NB_MODULE(wasserstein_mcf_ext, m) {
         std::cout << "Hello from Wasserstein MCF!" << std::endl;
     }, "A simple hello world function for the Wasserstein MCF extension");
 }
-/*
-void init_wasserstein_mcf_ext(nanobind::module_ &m) {
-    m.doc() = "Wasserstein MCF extension module";
-    
-    m.def("wasserstein_mcf_hello_world", []() {
-        std::cout << "Hello from Wasserstein MCF!" << std::endl;
-    }, "A simple hello world function for the Wasserstein MCF extension");
-}*/
